@@ -2,13 +2,22 @@
 <html>
 
 <head>
+	<script src="https://kit.fontawesome.com/84f203aadf.js"></script>
     <meta charset='utf-8'>
     <meta name="description" content="A site created for a test to demonstrate coding ability">
     <meta name="author" content="Vishnu Patel">
+    <meta name="viewport" content="width=device-width, initial-scale=.5, maximum-scale=12.0, minimum-scale=.25, user-scalable=yes" />
     <title>Civic Enterprise Leeds - Home Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 </head>
 <style type="text/css">
 /* nav bar */
+
+nav {
+    padding-left: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
 
 ul {
     list-style-type: none;
@@ -31,50 +40,96 @@ li a {
     text-decoration: none;
 }
 
+
 /* Change the link to underline on hover */
+
 li a:hover {
     text-decoration: underline;
     text-decoration-color: #731378;
 }
 
+
 /* Main CSS */
+
 body,
 html {
     height: 100%;
     margin: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 /* hero image */
+
 .hero-banner {
     /* linear-gradient */
-    background-image: linear-gradient(105deg, #731378 15%, #038fa5 65%);
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    background-image: linear-gradient(105deg, #731378 10%, #038fa5 65%);
+    position: inherit;
+    height: 420px;
+    max-width: 100%;
 }
 
+
 /* Text css for hero */
+
 .hero-text {
     text-align: left;
     position: absolute;
-    left: 1%;
-    top: 15%;
+    top: 10px;
+    padding-top: 125px;
+    padding-left: 1%;
     color: white;
+    font-size: 1.3em;
 }
-.hero-image{
-	height: 87%;
-    position: fixed;
-    left: 44%;
 
+.hero-text-disclamer {
+    color: black;
+    font-size: 500px;
 }
+
+.hero-image {
+
+    position: inherit;
+    height: 180%;
+    padding-left: 40%;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+    position: absolute;
+    left: 1.5%;
+    padding-top: 1%;
+}
+
+.box {
+    background-color: #731378;
+    width: 24%;
+    margin: 10px;
+    text-align: left;
+    font-size: 1em;
+    padding-left: 20px;
+    color:white;
+    padding-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+.fa-arrow-circle-right {
+	padding-top: 50px;
+    position: inherit;
+    margin-left: 180px;}
+
+h3{font-size: 1.6em;
+font-weight: 400}
 </style>
 
 <body>
     <nav>
         <ul>
-        	<li><IMG SRC="assets/logo.svg"/></li>
+            <li>
+                <IMG SRC="assets/logo.svg" />
+            </li>
             <li><a href="">Home</a></li>
             <li><a href="">Our Services</a></li>
             <li><a href="">About Us</a></li>
@@ -82,20 +137,37 @@ html {
         </ul>
     </nav>
     <div class="hero-banner">
+        <img class="hero-image" SRC="assets/cleaning-icon.svg" />
         <div class="hero-text">
             <h1>Excellence you <br> can rely on</h1>
             <p>Catering, clean, property maintenance,
                 <br> fleet managment, legal services,
                 <br> buiness support and more...</p>
-
         </div>
-          
-        <IMG class="hero-image" SRC="assets/cleaning-icon.svg"/>
-         
-
     </div>
-    <h1>test</h1>
-    <p>test</p>
+    <div class="flex-container">
+        <div class="box">
+            <h3>Catering Leeds</h3>
+            <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                <i class="fas fa-arrow-circle-right fa-2x"></i>
+        </div>
+       <div class="box">
+            <h3>Catering Leeds</h3>
+            <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+        </div>
+       <div class="box">
+            <h3>Catering Leeds</h3>
+            <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+        </div>
+       <div class="box">
+            <h3>Catering Leeds</h3>
+            <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+        </div>
+    </div>
 </body>
 
 </html>
