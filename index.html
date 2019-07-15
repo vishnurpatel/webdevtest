@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<script src="https://kit.fontawesome.com/84f203aadf.js"></script>
+    <script src="https://kit.fontawesome.com/84f203aadf.js"></script>
     <meta charset='utf-8'>
     <meta name="description" content="A site created for a test to demonstrate coding ability">
     <meta name="author" content="Vishnu Patel">
@@ -11,6 +11,65 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 </head>
 <style type="text/css">
+
+* {
+    box-sizing: border-box;
+}
+/* grid system using 12 cols 100/12 = 8.33 */
+[class*="col-"] {
+    float: left;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+
 /* nav bar */
 
 nav {
@@ -41,12 +100,14 @@ li a {
 }
 
 
+
 /* Change the link to underline on hover */
 
 li a:hover {
     text-decoration: underline;
     text-decoration-color: #731378;
 }
+
 
 
 /* Main CSS */
@@ -56,7 +117,9 @@ html {
     height: 100%;
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
+        overflow-x: hidden;
 }
+
 
 
 /* hero image */
@@ -73,13 +136,11 @@ html {
 /* Text css for hero */
 
 .hero-text {
-    text-align: left;
-    position: absolute;
-    top: 10px;
-    padding-top: 125px;
+    position: static;
     padding-left: 1%;
     color: white;
     font-size: 1.3em;
+    padding-top: 78px;
 }
 
 .hero-text-disclamer {
@@ -88,47 +149,55 @@ html {
 }
 
 .hero-image {
-
-    position: inherit;
-    height: 180%;
-    padding-left: 40%;
-}
-
-
-.flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: white;
-    position: absolute;
-    left: 1.5%;
-    padding-top: 1%;
+    position: relative;
+    right: -500px;
+    height: 167%;
+    top: -315px;
 }
 
 .box {
     background-color: #731378;
-    width: 24%;
-    margin: 10px;
     text-align: left;
+    padding: 15px;
+    margin: 20px;
     font-size: 1em;
-    padding-left: 20px;
-    color:white;
-    padding-bottom: 15px;
+    color: white;
     letter-spacing: 0.5px;
 }
-.fa-arrow-circle-right {
-	padding-top: 50px;
-    position: inherit;
-    margin-left: 180px;}
 
-h3{font-size: 1.6em;
-font-weight: 400}
+.fa-arrow-circle-right {
+	margin-top: 5px;
+    padding-bottom: 3%;
+    position: relative;
+     left: 75%;
+}
+
+h3 {
+    font-size: 1.6em;
+    font-weight: 400
+}
+
+@media only screen and (max-width:950px) {
+    /* For mobile phones: */
+    .col-3 {
+        width: 50%;
+    }
+    .hero-image {
+
+    }
+}
+@media only screen and (max-width:850px) {
+    /* For mobile phones: */
+.hero-image {
+    display: none;}
+}
 </style>
 
 <body>
     <nav>
         <ul>
             <li>
-                <IMG SRC="assets/logo.svg" />
+                <IMG SRC="assets/logo.svg"/>
             </li>
             <li><a href="">Home</a></li>
             <li><a href="">Our Services</a></li>
@@ -136,36 +205,85 @@ font-weight: 400}
             <li><a href="">Contact</a></li>
         </ul>
     </nav>
-    <div class="hero-banner">
-        <img class="hero-image" SRC="assets/cleaning-icon.svg" />
-        <div class="hero-text">
-            <h1>Excellence you <br> can rely on</h1>
-            <p>Catering, clean, property maintenance,
-                <br> fleet managment, legal services,
-                <br> buiness support and more...</p>
+    <div class="row">
+
+        <div class="hero-banner ">
+
+            <div class="hero-text">
+                <h1>Excellence you <br> can rely on</h1>
+                <p>Catering, clean, property maintenance,
+                    <br> fleet managment, legal services,
+                    <br> buiness support and more...</p>
+            </div>  
+
+    <img class="hero-image"  SRC="assets/cleaning-icon.svg" /> </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <div class="box">
+                <h3>Catering Leeds</h3>
+                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                <i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="box" style="background-color: #55468a">
+                <h3>Catering Leeds</h3>
+                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                <i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="box" style="background-color: #3f6696">
+                <h3>Catering Leeds</h3>
+                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                <i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="box" style="background-color: #037ca5">
+                <h3>Catering Leeds</h3>
+                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                <i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
         </div>
     </div>
-    <div class="flex-container">
-        <div class="box">
-            <h3>Catering Leeds</h3>
-            <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+        <div class="row">
+        <div class="col-3">
+            <div class="box" style="background-color: #55468a">
+                <h3>Catering Leeds</h3>
+                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
                 <i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
         </div>
-       <div class="box">
-            <h3>Catering Leeds</h3>
-            <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+        <div class="col-3">
+            <div class="box" style="background-color: #3f6696">
+                <h3>Catering Leeds</h3>
+                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                <i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
         </div>
-       <div class="box">
-            <h3>Catering Leeds</h3>
-            <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+        <div class="col-3">
+            <div class="box" style="background-color: #037ca5">
+                <h3>Catering Leeds</h3>
+                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                <i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
         </div>
-       <div class="box">
-            <h3>Catering Leeds</h3>
-            <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+        <div class="col-3">
+            <div class="box" style="background-color: #038fa5">
+                <h3>Catering Leeds</h3>
+                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                <i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
         </div>
     </div>
 </body>
