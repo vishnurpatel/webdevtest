@@ -3,6 +3,7 @@
 
 <head>
     <script src="https://kit.fontawesome.com/84f203aadf.js"></script>
+    <link href="assets/StyleSheet.css" rel="stylesheet" type="text/css">
     <meta charset='utf-8'>
     <meta name="description" content="A site created for a test to demonstrate coding ability">
     <meta name="author" content="Vishnu Patel">
@@ -10,194 +11,12 @@
     <title>Civic Enterprise Leeds - Home Page</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 </head>
-<style type="text/css">
-
-* {
-    box-sizing: border-box;
-}
-/* grid system using 12 cols 100/12 = 8.33 */
-[class*="col-"] {
-    float: left;
-}
-
-.col-1 {
-    width: 8.33%;
-}
-
-.col-2 {
-    width: 16.66%;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-4 {
-    width: 33.33%;
-}
-
-.col-5 {
-    width: 41.66%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-7 {
-    width: 58.33%;
-}
-
-.col-8 {
-    width: 66.66%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-10 {
-    width: 83.33%;
-}
-
-.col-11 {
-    width: 91.66%;
-}
-
-.col-12 {
-    width: 100%;
-}
-
-
-
-/* nav bar */
-
-nav {
-    padding-left: 1%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffffff;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-
-
-/* Change the link to underline on hover */
-
-li a:hover {
-    text-decoration: underline;
-    text-decoration-color: #731378;
-}
-
-
-
-/* Main CSS */
-
-body,
-html {
-    height: 100%;
-    margin: 0px;
-    font-family: 'Montserrat', sans-serif;
-        overflow-x: hidden;
-}
-
-
-
-/* hero image */
-
-.hero-banner {
-    /* linear-gradient */
-    background-image: linear-gradient(105deg, #731378 10%, #038fa5 65%);
-    position: inherit;
-    height: 420px;
-    max-width: 100%;
-}
-
-
-/* Text css for hero */
-
-.hero-text {
-    position: static;
-    padding-left: 1%;
-    color: white;
-    font-size: 1.3em;
-    padding-top: 78px;
-}
-
-.hero-text-disclamer {
-    color: black;
-    font-size: 500px;
-}
-
-.hero-image {
-    position: relative;
-    right: -500px;
-    height: 167%;
-    top: -315px;
-}
-
-.box {
-    background-color: #731378;
-    text-align: left;
-    padding: 15px;
-    margin: 20px;
-    font-size: 1em;
-    color: white;
-    letter-spacing: 0.5px;
-}
-
-.fa-arrow-circle-right {
-	margin-top: 5px;
-    padding-bottom: 3%;
-    position: relative;
-     left: 75%;
-}
-
-h3 {
-    font-size: 1.6em;
-    font-weight: 400
-}
-
-@media only screen and (max-width:950px) {
-    /* For mobile phones: */
-    .col-3 {
-        width: 50%;
-    }
-    .hero-image {
-
-    }
-}
-@media only screen and (max-width:850px) {
-    /* For mobile phones: */
-.hero-image {
-    display: none;}
-}
-</style>
 
 <body>
     <nav>
         <ul>
             <li>
-                <IMG SRC="assets/logo.svg"/>
+                <IMG SRC="assets/logo.svg" />
             </li>
             <li><a href="">Home</a></li>
             <li><a href="">Our Services</a></li>
@@ -206,83 +25,89 @@ h3 {
         </ul>
     </nav>
     <div class="row">
-
         <div class="hero-banner ">
-
             <div class="hero-text">
                 <h1>Excellence you <br> can rely on</h1>
                 <p>Catering, clean, property maintenance,
                     <br> fleet managment, legal services,
                     <br> buiness support and more...</p>
-            </div>  
-
-    <img class="hero-image"  SRC="assets/cleaning-icon.svg" /> </div>
+            </div>
+            <img class="hero-image" SRC="assets/cleaning-icon.svg" /> </div>
     </div>
-    <div class="row">
-        <div class="col-3">
-            <div class="box">
-                <h3>Catering Leeds</h3>
-                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
-                <i class="fas fa-arrow-circle-right fa-2x"></i>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="box" style="background-color: #55468a">
-                <h3>Catering Leeds</h3>
-                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
-                <i class="fas fa-arrow-circle-right fa-2x"></i>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="box" style="background-color: #3f6696">
-                <h3>Catering Leeds</h3>
-                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
-                <i class="fas fa-arrow-circle-right fa-2x"></i>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="box" style="background-color: #037ca5">
-                <h3>Catering Leeds</h3>
-                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
-                <i class="fas fa-arrow-circle-right fa-2x"></i>
-            </div>
-        </div>
-    </div>
+    <div class="container">
         <div class="row">
-        <div class="col-3">
-            <div class="box" style="background-color: #55468a">
-                <h3>Catering Leeds</h3>
-                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+            <div class="col-3">
+                <div class="box">
+                    <h3>Catering Leeds</h3>
+                    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                </div><i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
+            <div class="col-3">
+                <div class="box" style="background-color: #55468a">
+                    <h3>Catering Leeds</h3>
+                    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                </div><i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
+            <div class="col-3">
+                <div class="box" style="background-color: #3f6696">
+                    <h3>Catering Leeds</h3>
+                    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                </div>
                 <i class="fas fa-arrow-circle-right fa-2x"></i>
             </div>
-        </div>
-        <div class="col-3">
-            <div class="box" style="background-color: #3f6696">
-                <h3>Catering Leeds</h3>
-                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
-                <i class="fas fa-arrow-circle-right fa-2x"></i>
+            <div class="col-3">
+                <div class="box" style="background-color: #037ca5">
+                    <h3>Catering Leeds</h3>
+                    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                </div> <i class="fas fa-arrow-circle-right fa-2x"></i>
             </div>
         </div>
-        <div class="col-3">
-            <div class="box" style="background-color: #037ca5">
-                <h3>Catering Leeds</h3>
-                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+        <div class="row">
+            <div class="col-3">
+                <div class="box" style="background-color: #55468a">
+                    <h3>Cleaning services</h3>
+                    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                </div>
                 <i class="fas fa-arrow-circle-right fa-2x"></i>
             </div>
+            <div class="col-3">
+                <div class="box" style="background-color: #3f6696">
+                    <h3>City signs</h3>
+                    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                </div><i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
+            <div class="col-3">
+                <div class="box" style="background-color: #037ca5">
+                    <h3>Presto</h3>
+                    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                </div><i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
+            <div class="col-3">
+                <div class="box" style="background-color: #038fa5">
+                    <h3>Flavour</h3>
+                    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                </div><i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
         </div>
-        <div class="col-3">
-            <div class="box" style="background-color: #038fa5">
-                <h3>Catering Leeds</h3>
-                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
-                <i class="fas fa-arrow-circle-right fa-2x"></i>
+        <div class="row">
+            <div class="col-4">
+                <img class="cookingicon" SRC="assets/cooking-icon.svg" />
+            </div>
+            <div class="col-8">
+                <div class="Abouttext">
+                    <H2>Leeds City Council provides excellent services to the people of Leeds every day.</H2>
+                    <p>Leeds City Council provides excellent services to the people of Leeds every day. Leeds City Council is made up of many amazing frontline services which include; catering, cleaning, property maintenance, fleet management, legal services, business support centre to name just a few.</p>
+                    <p>Each day these teams deliver fantastic standards for the people of Leeds. Many of our council services are desirable to other companies so Civic Enterprise Leeds has been developed to allow key services to develop business opportunities, build relationships and start to trade. </p>
+                    <p>Civic Enterprise Leeds already hold contracts with the NHS, the West Yorkshire Ambulance Service, Ringways Ford to name a few. We also provide services for other local authorities in the UK.</p>
+                </div>
             </div>
         </div>
     </div>
