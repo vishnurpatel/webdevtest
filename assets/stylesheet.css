@@ -145,7 +145,7 @@ h3 {
     height: 40px;
     margin: 5px;}
 .hero-banner {
-    background-image: linear-gradient(105deg, #731378 10%, #038fa5 65%);
+    background-image: linear-gradient(105deg, #731378 10%, #018195 65%);
     position: inherit;
     height: 420px;
     max-width: 100%;
@@ -197,7 +197,7 @@ h3 {
         background-color: #037ca5;
 }
 .green{
-        background-color: #038fa5;
+        background-color: #018195;
 }
 .box:hover {
     box-shadow:inset 0 0 0 99999px rgba(0,0,0,0.3);
@@ -256,7 +256,26 @@ h3 {
     line-height: 18pt;
 }
 
-
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: black;
+    background-color:orange;
+    left: 3px;
+    top: 4px;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    z-index: 999;
+    padding: .625em;
+}
 
 @media only screen and (max-width:2010px) {
     .cookingicon {

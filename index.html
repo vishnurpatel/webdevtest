@@ -13,8 +13,10 @@
 </head>
 
 <body>
+
     <nav>
         <div class="mainnavbar">
+                <a class="skip-main" href="#main">Skip to main content</a>
             <img class="civiclogo" alt="Civic Enterprise Leeds" src="assets/logo.svg" />
             <a class="active" href="http://vishnupatel.co.uk/WebDevTest/">Home</a>
             <a href="https://www.leeds.gov.uk/civicEnterprise/Our%20services">Our Services</a>
@@ -22,7 +24,7 @@
             <a href="https://www.leeds.gov.uk/">Contact</a>
             <div class="searchbar">
                 <form role="search" action="#">
-                    <input type="text" placeholder="Search our website" name="search">
+                    <input aria-label="Search" type="text" placeholder="Search our website" name="search">
                     <button type="submit">Go</button>
                 </form>
             </div>
@@ -40,7 +42,7 @@
             <img alt="" class="hero-image" src="assets/cleaning-icon.svg" />
         </div>
     </div>
-    <div role="main">
+    <div id="main" role="main">
         <div class="row">
             <div class="col-3">
                 <div class="box" tabindex="0" onkeypress="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/catering-leeds';" onclick="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/catering-leeds';">
