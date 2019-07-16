@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Civic Enterprise Leeds - Home Page</title>
+    <title>Civic Enterprise Leeds - Home Page</title>
     <script src="https://kit.fontawesome.com/84f203aadf.js"></script>
     <link href="assets/stylesheet.css" rel="stylesheet" type="text/css">
     <meta charset='utf-8'>
@@ -14,17 +14,21 @@
 
 <body>
     <nav>
-        <ul>
-            <li>
-                <img alt="" SRC="assets/logo.svg" />
-            </li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Services</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="mainnavbar">
+            <img class="civiclogo" alt="Civic Enterprise Leeds" src="assets/logo.svg" />
+            <a class="active" href="http://vishnupatel.co.uk/WebDevTest/">Home</a>
+            <a href="https://www.leeds.gov.uk/civicEnterprise/Our%20services">Our Services</a>
+            <a href="https://www.leeds.gov.uk/civicEnterprise/about-us">About Us</a>
+            <a href="https://www.leeds.gov.uk/">Contact</a>
+            <div class="searchbar">
+                <form role="search" action="#">
+                    <input type="text" placeholder="Search our website" name="search">
+                    <button type="submit">Go</button>
+                </form>
+            </div>
+        </div>
     </nav>
-    <div role="banner" class="row" >
+    <div role="banner" class="row">
         <div class="hero-banner ">
             <div class="hero-text">
                 <h1>Excellence you <br> can rely on</h1>
@@ -33,110 +37,94 @@
                     <br> buiness support and more...</p>
             </div>
             <p class="hero-text-disclamer">image: freepik.com</p>
-            <img alt="Civic Enterprise Leeds Logo" class="hero-image" SRC="assets/cleaning-icon.svg" />
+            <img alt="" class="hero-image" src="assets/cleaning-icon.svg" />
         </div>
     </div>
     <div role="main">
-    <div class="row">
-        <div class="col-3">
-            <div class="box" tabindex="0"  onkeypress="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/catering-leeds';"
-            onclick="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/catering-leeds';">
-                <h2>Catering Leeds</h2>
-                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
-            </div><i class="fas fa-arrow-circle-right fa-2x"></i>
-        </div>
-        <div class="col-3">
-            <div class="box lightpurpel" tabindex="0"
-            onkeypress="location.href='https://bsc.leeds.gov.uk/';"
-             onclick="location.href='https://bsc.leeds.gov.uk/';">
-                <h2>Business Support Center</h2>
-                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
-            </div><i class="fas fa-arrow-circle-right fa-2x"></i>
-        </div>
-        <div class="col-3">
-            <div class="box purpelblue"  tabindex="0"
-            onkeypress="location.href='http://www.leedsforlearning.co.uk/';"
-             onclick="location.href='http://www.leedsforlearning.co.uk/';">
-                <h2>Services for school</h2>
-                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
-            </div>
-            <i class="fas fa-arrow-circle-right fa-2x"></i>
-        </div>
-        <div class="col-3">
-            <div class="box blue" tabindex="0"
-            onkeypress="location.href='https://www.leeds.gov.uk/civicEnterprise/Pages/Fleet-services.aspx';"
-            onclick="location.href='https://www.leeds.gov.uk/civicEnterprise/Pages/Fleet-services.aspx';">
-                <h3>Fleet services</h3>
-                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
-            </div> <i class="fas fa-arrow-circle-right fa-2x"></i>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-3">
-            <div class="box lightpurpel" tabindex="0"
-            onkeypress="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/cleaning';"
-             onclick="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/cleaning';">
-                <h2>Cleaning services</h2>
-                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
-            </div>
-            <i class="fas fa-arrow-circle-right fa-2x"></i>
-        </div>
-        <div class="col-3">
-            <div class="box purpelblue" tabindex="0"
-            onkeypress="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/city-signs';"
-             onclick="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/city-signs';">
-                <h2>City signs</h2>
-                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
-            </div><i class="fas fa-arrow-circle-right fa-2x"></i>
-        </div>
-        <div class="col-3">
-            <div class="box blue" tabindex="0"
-            onkeypress="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/presto';"
-            onclick="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/presto';">
-                <h3>Presto</h3>
-                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
-            </div><i class="fas fa-arrow-circle-right fa-2x"></i>
-        </div>
-        <div class="col-3">
-            <div class="box green"  tabindex="0"
-            onkeypress="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/civic%20flavour';"
-            onclick="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/civic%20flavour';">
-                <h3>Flavour</h3>
-                <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
-            </div><i class="fas fa-arrow-circle-right fa-2x"></i>
-        </div>
-    </div>
-
-    <div class="content" style="">
         <div class="row">
-            <div class="col-4">
-                <img alt="" class="cookingicon" SRC="assets/cooking-icon.svg" />
+            <div class="col-3">
+                <div class="box" tabindex="0" onkeypress="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/catering-leeds';" onclick="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/catering-leeds';">
+                    <h2>Catering Leeds</h2>
+                    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                </div><i class="fas fa-arrow-circle-right fa-2x"></i>
             </div>
-            <div class="col-8">
-                <div class="Abouttext">
-                    <H3>Leeds City Council provides excellent services to the people of Leeds every day.</H3>
-                    <p>Leeds City Council provides excellent services to the people of Leeds every day. Leeds City Council is made up of many amazing frontline services which include; catering, cleaning, property maintenance, fleet management, legal services, business support centre to name just a few.</p>
-                    <p>Each day these teams deliver fantastic standards for the people of Leeds. Many of our council services are desirable to other companies so Civic Enterprise Leeds has been developed to allow key services to develop business opportunities, build relationships and start to trade. </p>
-                    <p>Civic Enterprise Leeds already hold contracts with the NHS, the West Yorkshire Ambulance Service, Ringways Ford to name a few. We also provide services for other local authorities in the UK.</p>
+            <div class="col-3">
+                <div class="box lightpurpel" tabindex="0" onkeypress="location.href='https://bsc.leeds.gov.uk/';" onclick="location.href='https://bsc.leeds.gov.uk/';">
+                    <h2>Business Support Center</h2>
+                    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                </div><i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
+            <div class="col-3">
+                <div class="box purpelblue" tabindex="0" onkeypress="location.href='http://www.leedsforlearning.co.uk/';" onclick="location.href='http://www.leedsforlearning.co.uk/';">
+                    <h2>Services for school</h2>
+                    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                </div>
+                <i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
+            <div class="col-3">
+                <div class="box blue" tabindex="0" onkeypress="location.href='https://www.leeds.gov.uk/civicEnterprise/Pages/Fleet-services.aspx';" onclick="location.href='https://www.leeds.gov.uk/civicEnterprise/Pages/Fleet-services.aspx';">
+                    <h2>Fleet services</h2>
+                    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                </div> <i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="box lightpurpel" tabindex="0" onkeypress="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/cleaning';" onclick="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/cleaning';">
+                    <h2>Cleaning services</h2>
+                    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                </div>
+                <i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
+            <div class="col-3">
+                <div class="box purpelblue" tabindex="0" onkeypress="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/city-signs';" onclick="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/city-signs';">
+                    <h2>City signs</h2>
+                    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                </div><i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
+            <div class="col-3">
+                <div class="box blue" tabindex="0" onkeypress="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/presto';" onclick="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/presto';">
+                    <h2>Presto</h2>
+                    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                </div><i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
+            <div class="col-3">
+                <div class="box green" tabindex="0" onkeypress="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/civic%20flavour';" onclick="location.href='https://www.leeds.gov.uk/civicEnterprise/our%20services/civic%20flavour';">
+                    <h2>Flavour</h2>
+                    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Ut non tellus sed mi ornare pulvinar vel sit amet lacus.</p>
+                </div><i class="fas fa-arrow-circle-right fa-2x"></i>
+            </div>
+        </div>
+        <div class="content" style="">
+            <div class="row">
+                <div class="col-4">
+                    <img alt="" class="cookingicon" SRC="assets/cooking-icon.svg" />
+                </div>
+                <div class="col-8">
+                    <div class="Abouttext">
+                        <H3>Leeds City Council provides excellent services to the people of Leeds every day.</H3>
+                        <p>Leeds City Council provides excellent services to the people of Leeds every day. Leeds City Council is made up of many amazing frontline services which include; catering, cleaning, property maintenance, fleet management, legal services, business support centre to name just a few.</p>
+                        <p>Each day these teams deliver fantastic standards for the people of Leeds. Many of our council services are desirable to other companies so Civic Enterprise Leeds has been developed to allow key services to develop business opportunities, build relationships and start to trade. </p>
+                        <p>Civic Enterprise Leeds already hold contracts with the NHS, the West Yorkshire Ambulance Service, Ringways Ford to name a few. We also provide services for other local authorities in the UK.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-        </div>
     <div class="col-12">
         <footer>
-            <div class="footerContainer" role="contentinfo">
+            <div class="footerContainer">
                 <div class="col-3">
                     <p>Services</p>
-                    <ul >
+                    <ul>
                         <li><a href="https://www.leeds.gov.uk/civicEnterprise/our%20services/catering-leeds">Catering Leeds</a></li>
                         <li><a href="https://www.leeds.gov.uk/civicEnterprise/our%20services/city-signs">City signs</a></li>
                         <li><a href="https://www.leeds.gov.uk/civicEnterprise/our%20services/civic%20flavour">Civic Flavour</a></li>
@@ -157,13 +145,15 @@
                 <div class="col-3">
                     <p>Contact us</p>
                     <ul>
-                        <li>Telephone: xxx xxx xxx</li>
-                        <li>Email: xxx@xxx.xxx</li>
-                        <li>Request a callback</li>
+                        <li>Telephone: <a href="tel:00000000">xxx-xxx-xxx</a></li>
+                        <li>Email:
+                            <a href="mailto:webmaster@example.com">xxx@xxx.xxx</a>
+                        </li>
+                        <li><a href="tel:00000000">Request a callback</a></li>
                     </ul>
                 </div>
                 <div class="col-3" style="padding-right: 10px">
-                    <img alt="" style="margin-top: 13px;" src="https://www.leeds.gov.uk/_catalogs/masterpage/public/images/lcc-logo-white-01.svg" />
+                    <img alt="Leeds City Council" style="margin-top: 13px;" src="https://www.leeds.gov.uk/_catalogs/masterpage/public/images/lcc-logo-white-01.svg" />
                     <p> Copyright © Leeds City Council 2019.</p>
                     <p>Official local authority website for<br>Leeds providing information on local services.</p>
                 </div>
