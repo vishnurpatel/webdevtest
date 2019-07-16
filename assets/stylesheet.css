@@ -265,6 +265,10 @@ h3 {
     line-height: 18pt;
 }
 
+.footerContainer a:focus {
+    color: black;
+    background-color: orange;
+} 
 .footerContainer li {
     line-height: 18pt;
 }
