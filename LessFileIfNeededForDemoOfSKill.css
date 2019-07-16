@@ -1,0 +1,358 @@
+* {
+	 box-sizing: border-box;
+}
+ [class*="col-"] {
+	 float: left;
+}
+ .col-1 {
+	 width: 8.33%;
+}
+ .col-2 {
+	 width: 16.66%;
+}
+ .col-3 {
+	 width: 25%;
+}
+ .col-4 {
+	 width: 33.33%;
+}
+ .col-5 {
+	 width: 41.66%;
+}
+ .col-6 {
+	 width: 50%;
+}
+ .col-7 {
+	 width: 58.33%;
+}
+ .col-8 {
+	 width: 66.66%;
+}
+ .col-9 {
+	 width: 75%;
+}
+ .col-10 {
+	 width: 83.33%;
+}
+ .col-11 {
+	 width: 91.66%;
+}
+ .col-12 {
+	 width: 100%;
+}
+ .mainnavbar {
+	 background-color: white;
+	 overflow: hidden;
+}
+ .mainnavbar a {
+	 color: black;
+	 display: block;
+	 float: left;
+	 font-size: 1em;
+	 font-weight: bold;
+	 margin: 0;
+	 padding: 14px;
+	 padding: 14px 16px;
+	 text-align: center;
+	 text-align: left;
+	 text-decoration: none;
+	 width: 100%;
+}
+ .mainnavbar .searchbar {
+	 float: right;
+}
+ .mainnavbar .searchbar button {
+	 background-color: gray;
+	 background: #731278;
+	 border: none;
+	 color: white;
+	 cursor: pointer;
+	 display: block;
+	 float: right;
+	 font-size: 17px;
+	 margin-right: 16px;
+	 margin-top: 8px;
+	 margin: 0;
+	 padding: 14px;
+	 padding: 7px 10px;
+	 text-align: left;
+	 width: 100%;
+}
+ .mainnavbar input[type=text] {
+	 border: 1px solid #a9a9a9;
+	 border: 1px solid #cccccc;
+	 display: block;
+	 font-size: 17px;
+	 margin-top: 8px;
+	 margin: 0;
+	 padding: 14px;
+	 padding: 6px;
+	 text-align: left;
+	 width: 100%;
+}
+ nav a:hover {
+	 background-color: #dddddd;
+	 text-decoration-color: #731378;
+	 text-decoration: underline;
+}
+ nav a:focus {
+	 background-color: orange;
+	 color: black;
+	 text-decoration: underline;
+}
+ nav a.active {
+	 text-decoration-color: purple;
+	 text-decoration: underline;
+}
+ nav .searchbar button:focus {
+	 background-color: orange;
+	 color: black;
+}
+ nav .searchbar button:hover {
+	 background: #cccccc;
+}
+ nav .mainnavbar input[type=text]:focus {
+	 background-color: orange;
+	 color: black;
+}
+ body {
+	 font-family: 'Open Sans', sans-serif;
+	 height: 100%;
+	 margin: 0px;
+	 overflow-x: hidden;
+}
+ html {
+	 font-family: 'Open Sans', sans-serif;
+	 height: 100%;
+	 margin: 0px;
+	 overflow-x: hidden;
+}
+ h2 {
+	 font-weight: normal;
+}
+ h3 {
+	 font-size: 1.6em;
+	 font-weight: 400;
+}
+ .civiclogo {
+	 float: left;
+	 height: 40px;
+	 margin: 5px;
+	 max-width: 100%;
+}
+ .hero-banner {
+	 background-image: linear-gradient(105deg,#731378 10%,#018195 65%);
+	 height: 420px;
+	 max-width: 100%;
+	 position: inherit;
+}
+ .hero-text {
+	 color: white;
+	 font-size: 1.3em;
+	 padding-left: 1.5%;
+	 padding-top: 78px;
+	 position: static;
+}
+ .hero-text-disclamer {
+	 color: white;
+	 font-size: 10px;
+	 padding-right: 57px;
+	 padding-top: 25px;
+	 text-align: right;
+}
+ .hero-image {
+	 display: none;
+	 height: 96%;
+	 position: relative;
+	 right: -500px;
+	 top: -383px;
+}
+ .box {
+	 background-color: #731378;
+	 color: white;
+	 cursor: pointer;
+	 font-size: 1em;
+	 height: 320px;
+	 margin-bottom: -20px;
+	 margin: 10px;
+	 padding: 18px;
+	 text-align: left;
+}
+ .box:hover {
+	 box-shadow: inset 0 0 0 99999px rgba(0,0,0,0.3);
+}
+ .box:focus {
+	 background-color: orange;
+	 color: black;
+}
+ .lightpurpel {
+	 background-color: #55468a;
+}
+ .purpelblue {
+	 background-color: #3f6696;
+}
+ .blue {
+	 background-color: #037ca5;
+}
+ .green {
+	 background-color: #018195;
+}
+ .fa-arrow-circle-right {
+	 bottom: 40px;
+	 color: white;
+	 left: 70%;
+	 position: relative;
+}
+ .cookingicon {
+	 position: relative;
+	 right: -57%;
+	 top: 35px;
+}
+ .Abouttext {
+	 background-color: #f1f1f1;
+	 font-size: 1.1em;
+	 height: 550px;
+	 height: 620px;
+	 height: auto;
+	 margin-right: 2.5%;
+	 padding: 60px;
+	 z-index: -1;
+}
+ .footerContainer {
+	 background-color: #55468a;
+	 color: white;
+	 font-size: 13px;
+	 margin-top: 50px;
+	 overflow: hidden;
+	 padding-bottom: 45px;
+	 padding-left: 1%;
+	 padding-top: 20px;
+	 position: relative;
+}
+ .footerContainer ul {
+	 list-style: none;
+	 margin: 0px;
+	 padding: 0px;
+}
+ .footerContainer a {
+	 color: white;
+	 line-height: 18pt;
+}
+ .footerContainer li {
+	 line-height: 18pt;
+}
+ a.skip-main {
+	 height: 1px;
+	 left: -999px;
+	 overflow: hidden;
+	 position: absolute;
+	 top: auto;
+	 width: 1px;
+	 z-index: -999;
+}
+ a.skip-main:focus {
+	 background-color: orange;
+	 color: black;
+	 height: auto;
+	 left: 3px;
+	 overflow: auto;
+	 padding: .625em;
+	 top: 4px;
+	 width: auto;
+	 z-index: 999;
+}
+ a.skip-main:active {
+	 background-color: orange;
+	 color: black;
+	 height: auto;
+	 left: 3px;
+	 overflow: auto;
+	 padding: .625em;
+	 top: 4px;
+	 width: auto;
+	 z-index: 999;
+}
+ @media screen and (max-width: 2010px) {
+	 .cookingicon {
+		 right: -50%;
+	}
+}
+ @media screen and (min-width: 1725px) {
+	 .cookingicon {
+		 right: -42%;
+	}
+}
+ @media screen and (min-width: 1600px) {
+	 .cookingicon {
+		 right: -42%;
+	}
+}
+ @media screen and (min-width: 1550px) {
+	 .cookingicon {
+		 right: -42%;
+	}
+}
+ @media screen and (min-width: 1335px) {
+	 .cookingicon {
+		 right: -21%;
+	}
+	 .Abouttext {
+		 height: 620px;
+	}
+}
+ @media screen and (min-width: 1080px) {
+	 .cookingicon {
+		 right: -12%;
+	}
+}
+ @media screen and (min-width: 990px) {
+	 .col-3 {
+		 width: 50%;
+	}
+	 .col-8 {
+		 width: 100%;
+	}
+	 .col-4 {
+		 width: 100%;
+	}
+	 .Abouttext {
+		 height: auto;
+	}
+}
+ @media screen and (min-width: 850px) {
+	 .hero-image {
+		 right: -379px;
+		 height: 75%;
+		 top: -294px;
+	}
+}
+ @media screen and (min-width: 620px) {
+	 .col-3 {
+		 width: 100%;
+	}
+	 .hero-image {
+		 display: none;
+	}
+}
+ @media screen and (min-width: 600px) {
+	 .mainnavbar .searchbar {
+		 float: none;
+		 background: white;
+		 color: black;
+	}
+	 .mainnavbar a, .mainnavbar input[type=text], .mainnavbar .searchbar button {
+		 display: block;
+		 text-align: left;
+		 width: 100%;
+		 margin: 0;
+		 padding: 14px;
+	}
+	 .mainnavbar input[type=text] {
+		 border: 1px solid #ccc;
+	}
+	 .mainnavbar .searchbar button {
+		 background-color: gray;
+		 color: white;
+	}
+}
+ 
