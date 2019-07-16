@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 /* grid system using 12 cols 100/12 = 8.33 */
 [class*="col-"] {
     float: left;
@@ -335,7 +334,9 @@ a.skip-main:focus, a.skip-main:active {
 
 @media only screen and (max-width:850px) {
     .hero-image {
-        display: none;
+     right: -379px;
+    height: 75%;
+    top: -294px;
     }
 }
 
@@ -343,6 +344,10 @@ a.skip-main:focus, a.skip-main:active {
     .col-3 {
         width: 100%;
     }
+    .hero-image {
+    display: none;
+
+}
 
 }
 
@@ -364,7 +369,7 @@ a.skip-main:focus, a.skip-main:active {
   }
   .mainnavbar .searchbar button {
     background-color: gray;
-    color: White;
+    color: white;
   }
 
 }
