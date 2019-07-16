@@ -68,7 +68,7 @@ nav {
     padding-bottom: 0.5%;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -76,11 +76,11 @@ ul {
     background-color: #ffffff;
 }
 
-li {
+nav li {
     float: left;
 }
 
-li a {
+nav li a {
     display: block;
     color: black;
     font-weight: bold;
@@ -93,11 +93,14 @@ li a {
 
 /* Change the link to underline on hover */
 
-li a:hover {
+nav li a:hover {
     text-decoration: underline;
     text-decoration-color: #731378;
 }
-
+li a:focus {
+    text-decoration: underline;
+    color: orange;
+}
 
 
 /* Main CSS */
@@ -106,7 +109,7 @@ body,
 html {
     height: 100%;
     margin: 0px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
 }
 
@@ -119,23 +122,29 @@ html {
 
 .hero-text {
     position: static;
-    padding-left: 1%;
+    padding-left: 1.5%;
     color: white;
     font-size: 1.3em;
     padding-top: 78px;
 }
 
 .hero-text-disclamer {
-    color: black;
-    font-size: 500px;
+    color: white;
+    text-align: right;
+    font-size: 10px;
+    padding-top: 25px;
+    padding-right: 57px;
 }
 
 .hero-image {
     position: relative;
     right: -500px;
-    height: 167%;
-    top: -315px;
+    height: 96%;
+    top: -383px;
 }
+
+
+
 
 .box {
     background-color: #731378;
@@ -146,6 +155,26 @@ html {
     font-size: 1em;
     color: white;
     height: 320px;
+    cursor: pointer;
+}
+
+.lightpurpel{
+        background-color: #55468a;
+}
+.purpelblue{
+        background-color: #3f6696;
+}
+.blue{
+        background-color: #037ca5;
+}
+.green{
+        background-color: #038fa5;
+}
+.box:hover {
+    box-shadow:inset 0 0 0 99999px rgba(0,0,0,0.3);
+}
+.box:focus {
+    background-color: orange;
 }
 
 .fa-arrow-circle-right {
@@ -163,18 +192,43 @@ html {
 
 .Abouttext {
     padding: 60px;
-    background-color: lightgray;
+    background-color: #f1f1f1;
     margin-right: 2.5%;
     . z-index: -1;
     font-size: 1.1em;
     height: 550px;
 }
 
+.footerContainer {
+    position: relative;
+    padding-bottom: 45px;
+    padding-top: 20px;
+    overflow: hidden;
+    margin-top: 75px;
+    background-color: #55468a;
+    color: white;
+    padding-left: 1%;
+    font-size: 13px;
+}
 
+.footerContainer ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footerContainer a {
+    color: white;
+    line-height: 18pt;
+}
+
+.footerContainer li {
+    line-height: 18pt;
+}
 
 h3 {
     font-size: 1.6em;
-    font-weight: 400
+    font-weight: 400;
 }
 
 @media only screen and (max-width:2010px) {
@@ -217,12 +271,15 @@ h3 {
     .col-3 {
         width: 50%;
     }
+
     .col-8 {
         width: 100%;
     }
+
     .col-4 {
         width: 100%;
     }
+
     .Abouttext {
         height: auto;
     }
