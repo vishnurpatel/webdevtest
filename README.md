@@ -1,6 +1,13 @@
 # webdevtest
 Web Dev Test
 
+Technologies used:
+HTML5
+CSS
+LESS
+Javascript
+GIT
+
 Please see screenshots of valdation.
 
 Website has been Validated with W3C - https://validator.w3.org/
